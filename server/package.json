@@ -1,0 +1,23 @@
+{
+  "name": "currencyfairendpoint",
+  "version": "1.0.0",
+  "description": "Endpoint for form collection",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bvasic/CurrencyFairDev.git"
+  },
+  "author": "Bojan Vasic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bvasic/CurrencyFairDev/issues"
+  },
+  "homepage": "https://github.com/bvasic/CurrencyFairDev#readme",
+  "dependencies": {
+    "update": "^0.7.4"
+  }
+}
