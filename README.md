@@ -1,1 +1,1 @@
-# CurrencyFairDev
+Koala used as sass processor

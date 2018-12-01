@@ -1,0 +1,134 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+		<meta name="author" content="Bojan Vasic">
+		<meta name="description" content="CurrencyFair">
+		<meta name="keywords" content="CurrencyFair">
+		<title>CurrencyFair</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/global.css"/>
+		<script type='text/javascript' src='js/jquery-3.3.1.js'></script>
+		<script type='text/javascript' src='js/global.js'></script>
+	</head>
+	<body>
+		<div class="main-container">
+			<div class="header-container">
+				<div class="header">
+					<div class="logo"><a href="index.html"></a></div>
+				</div>
+			</div>
+			<div class="main-content-holder">
+				<div class="main-left-container">
+					<div class="transaction-panel">
+						<!--NAVIGATION MENU -->
+						<div class="trans-nav">
+							<ul>
+								<li>
+									<p class="step-no">Step 1</p>
+									<p class="step-desc">Transaction info</p>
+								</li>
+								<li>
+									<p class="step-no">Step 2</p>
+									<p class="step-desc">Recipient info</p>
+								</li>
+								<li>
+									<p class="step-no">Step 3</p>
+									<p class="step-desc">Make payment</p>
+								</li>
+							</ul>
+						</div>
+						<!--NAVIGATION MENU END-->
+						<div class="trans-title">
+							<p>Let's setup your transaction!</p>
+							<p>Specify the amount to be sent or received.</p>
+						</div>
+						<!--FORM COLLECTION-->
+						<div class="trans-form">
+							<div class="trans-send-container">
+								<div id="sendFocus" class="send-left">
+									<div class="send-left-label">
+										YOU SEND
+									</div>
+									<div class="send-left-input">
+										<span class="input-currency-sign" id="#inputSign">
+											€
+										</span>
+										<input id="setAmount" type="text" class="input-amount"/>
+									</div>
+								</div>
+								<div class="send-right" id="inputCurrencySelect">
+									<select name="currenciesIn" class="inputCurrencySelect">
+										<option value="eur" class="eur-input" data-countryid="eur">EUR</option>
+										<option value="gbp" class="gbp-input" data-countryid="gbp">GBP</option>
+										<option value="usd" class="usd-input" data-countryid="usd">USD</option>
+										<option value="cad" class="cad-input" data-countryid="cad">CAD</option>
+									</select>
+								</div>
+							</div>
+							
+							<div class="trans-gets-container">
+								<div id="getFocus" class="send-left">
+									<div class="send-left-label">
+										RECEIVER GETS
+									</div>
+									<div class="send-left-input">
+										<span class="output-currency-sign" id="#outputSign">
+										$
+										</span>
+										<input id="getAmount" type="text" class="input-amount"/>
+									</div>
+								</div>
+								<div class="send-right" id="outputCurrencySelect">
+									<select name="currenciesIn" class="outputCurrencySelect">
+										<option value="eur" class="eur-input" data-countryid="eur">EUR</option>
+										<option value="gbp" class="gbp-input" data-countryid="gbp">GBP</option>
+										<option value="usd" class="usd-input" data-countryid="usd">USD</option>
+										<option value="cad" class="cad-input" data-countryid="cad">CAD</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<!--TRANSACTION CONVERSION FORM END-->
+						<div class="trans-submit">
+							<button data-popup-open="popup-confirmation">Next</button>
+						</div>
+						<div class="cf-footer">
+							<span>© 2016 CurrencyFair</span>
+							<div class="cf-footer-links">
+								<a href="#">Help & Support</a>
+								<a href="#">Legal Stuff</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- RIGHT SIDEBAR PANEL-->
+				<div class="main-right-container">
+					<div class="confirmation-panel">
+						<div class="sending-details">
+							Front-end output from end-point service
+						</div>
+						<div class="sending-amount">
+							<div class="sending-amount-label">
+								You send
+							</div>
+							<div class="sending-amount-number">
+								<span class="sidebar-input-sign">€</span><span id="rightReceivingAmount">2000</span>
+							</div>
+						</div>
+						<div class="receiving-details">
+							Receiving Details
+						</div>
+						<div class="receiving-amount">
+							<div class="receiving-rate">
+								Rate
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
