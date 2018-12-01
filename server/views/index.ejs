@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Life Planner</title>
+</head>
+<body>
+  Create new persons.
+  Erase collection with /erase
+
+  <ul class="persons">
+  <% for(var i=0; i<persons.length; i++) {%>
+    <li class="quote">
+      <span><%= persons[i].firstname %></span>
+      <span><%= persons[i].lastname %></span>
+    </li>
+  <% } %>
+  </ul>
+
+  <form action="/addperson" method="POST">
+    <input type="text" placeholder="firstname" name="firstname">
+    <input type="text" placeholder="lastname" name="lastname">
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
