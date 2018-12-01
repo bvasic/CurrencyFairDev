@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/bvasic/CurrencyFairDev#readme",
   "dependencies": {
+    "express": "^4.16.2",
+    "fs": "0.0.1-security",
+    "jsonfile": "^4.0.0",
     "update": "^0.7.4"
   }
 }
