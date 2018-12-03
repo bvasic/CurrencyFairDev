@@ -21,32 +21,28 @@ MongoClient.connect('mongodb://admin:LifePlanDb55@cluster0-shard-00-00-b0lmw.mon
     });
 })
 
-// jsonfile.readFile(file, function(err,obj){
-//     console.log(obj);
-// });
-
 server.use(bodyParser.urlencoded({extended: true}))
-// server.use(express.static(path.join(__dirname, 'public')));
-// server.post("/",function(req,res){
-//         var jsonRequest = req.body;
-//         jsonfile.writeFile(file,JSON.stringify(jsonRequest));
-// });
+
+server.use(express.static(path.join(__dirname, 'public')));
+
+//REQUESTS
 server.get('/', (req, res) => {
   db.collection('persons').find().toArray(function(err, results) {
-
-  res.render('index.ejs', {persons: results})
-  // send HTML file populated with quotes here
+  res.render('index.ejs', {persons: results});
+  // render EJS template populated with data from MongoDB
 })
 })
 server.get('/list', (req, res) => {
   db.collection('persons').find().toArray(function(err, results) {
-  console.log(results)
-  // send HTML file populated with quotes here
+  console.log(results);
+  // render EJS template populated with data from MongoDB
 })
 })
 server.get('/erase', (req,res) => {
     db.collection('persons').remove( { } )
 });
+
+// RECORD NEW DATA TO MongoDB
 server.post('/addperson', function(req,res){
   db.collection('persons').save(req.body, (err, result) => {
     if (err) return console.log(err)

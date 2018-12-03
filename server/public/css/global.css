@@ -5,51 +5,51 @@
 /*TRANSACTION MENU*/
 @font-face {
   font-family: 'PostGrotesk-Bold';
-  src: url("../fonts/post-grotesk/PostGrotesk-Bold.eot");
+  src: url("../fonts/PostGrotesk-Bold.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/post-grotesk/PostGrotesk-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/post-grotesk/PostGrotesk-Bold.woff2") format("woff2"), url("../fonts/post-grotesk/PostGrotesk-Bold.woff") format("woff"), url("../fonts/post-grotesk/PostGrotesk-Bold.ttf") format("truetype"), url("../fonts/post-grotesk/PostGrotesk-Bold.svg#svgFontName") format("svg");
+  src: url("../fonts/PostGrotesk-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/PostGrotesk-Bold.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 @font-face {
   font-family: 'PostGrotesk-BoldItalic';
-  src: url("../fonts/post-grotesk/PostGrotesk-BoldItalic.eot");
+  src: url("../fonts/PostGrotesk-BoldItalic.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/post-grotesk/PostGrotesk-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/post-grotesk/PostGrotesk-BoldItalic.woff2") format("woff2"), url("../fonts/post-grotesk/PostGrotesk-BoldItalic.woff") format("woff"), url("../fonts/post-grotesk/PostGrotesk-BoldItalic.ttf") format("truetype"), url("../fonts/post-grotesk/PostGrotesk-BoldItalic.svg#svgFontName") format("svg");
+  src: url("../fonts/PostGrotesk-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PostGrotesk-BoldItalic.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 @font-face {
   font-family: 'PostGrotesk-Book';
-  src: url("../fonts/post-grotesk/PostGrotesk-Book.eot");
+  src: url("../fonts/PostGrotesk-Book.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/post-grotesk/PostGrotesk-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/post-grotesk/PostGrotesk-Book.woff2") format("woff2"), url("../fonts/post-grotesk/PostGrotesk-Book.woff") format("woff"), url("../fonts/post-grotesk/PostGrotesk-Book.ttf") format("truetype"), url("../fonts/post-grotesk/PostGrotesk-Book.svg#svgFontName") format("svg");
+  src: url("../fonts/PostGrotesk-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/PostGrotesk-Book.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 @font-face {
   font-family: 'PostGrotesk-BookItalic';
-  src: url("../fonts/post-grotesk/PostGrotesk-BookItalic.eot");
+  src: url("../fonts/PostGrotesk-BookItalic.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/post-grotesk/PostGrotesk-BookItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/post-grotesk/PostGrotesk-BookItalic.woff2") format("woff2"), url("../fonts/post-grotesk/PostGrotesk-BookItalic.woff") format("woff"), url("../fonts/post-grotesk/PostGrotesk-BookItalic.ttf") format("truetype"), url("../fonts/post-grotesk/PostGrotesk-BookItalic.svg#svgFontName") format("svg");
+  src: url("../fonts/PostGrotesk-BookItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PostGrotesk-BookItalic.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 @font-face {
   font-family: 'PostGrotesk-Light';
-  src: url("../fonts/post-grotesk/PostGrotesk-Light.eot");
+  src: url("../fonts/PostGrotesk-Light.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/post-grotesk/PostGrotesk-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/post-grotesk/PostGrotesk-Light.woff2") format("woff2"), url("../fonts/post-grotesk/PostGrotesk-Light.woff") format("woff"), url("../fonts/post-grotesk/PostGrotesk-Light.ttf") format("truetype"), url("../fonts/post-grotesk/PostGrotesk-Light.svg#svgFontName") format("svg");
+  src: url("../fonts/PostGrotesk-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/PostGrotesk-Light.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 @font-face {
   font-family: 'PostGrotesk-LightItalic.eot';
-  src: url("../fonts/post-grotesk/PostGrotesk-LightItalic.eot.eot");
+  src: url("../fonts/PostGrotesk-LightItalic.eot.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/post-grotesk/PostGrotesk-LightItalic.eot.eot?#iefix") format("embedded-opentype"), url("../fonts/post-grotesk/PostGrotesk-LightItalic.eot.woff2") format("woff2"), url("../fonts/post-grotesk/PostGrotesk-LightItalic.eot.woff") format("woff"), url("../fonts/post-grotesk/PostGrotesk-LightItalic.eot.ttf") format("truetype"), url("../fonts/post-grotesk/PostGrotesk-LightItalic.eot.svg#svgFontName") format("svg");
+  src: url("../fonts/PostGrotesk-LightItalic.eot.eot?#iefix") format("embedded-opentype"), url("../fonts/PostGrotesk-LightItalic.eot.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 @font-face {
   font-family: 'PostGrotesk-Medium';
-  src: url("../fonts/post-grotesk/PostGrotesk-Medium.eot");
+  src: url("../fonts/PostGrotesk-Medium.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/post-grotesk/PostGrotesk-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/post-grotesk/PostGrotesk-Medium.woff2") format("woff2"), url("../fonts/post-grotesk/PostGrotesk-Medium.woff") format("woff"), url("../fonts/post-grotesk/PostGrotesk-Medium.ttf") format("truetype"), url("../fonts/post-grotesk/PostGrotesk-Medium.svg#svgFontName") format("svg");
+  src: url("../fonts/PostGrotesk-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/PostGrotesk-Medium.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 @font-face {
   font-family: 'PostGrotesk-MediumItalic.eot';
-  src: url("../fonts/post-grotesk/PostGrotesk-MediumItalic.eot.eot");
+  src: url("../fonts/PostGrotesk-MediumItalic.eot.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/post-grotesk/PostGrotesk-MediumItalic.eot.eot?#iefix") format("embedded-opentype"), url("../fonts/post-grotesk/PostGrotesk-MediumItalic.eot.woff2") format("woff2"), url("../fonts/post-grotesk/PostGrotesk-MediumItalic.eot.woff") format("woff"), url("../fonts/post-grotesk/PostGrotesk-MediumItalic.eot.ttf") format("truetype"), url("../fonts/post-grotesk/PostGrotesk-MediumItalic.eot.svg#svgFontName") format("svg");
+  src: url("../fonts/PostGrotesk-MediumItalic.eot.eot?#iefix") format("embedded-opentype"), /url("../fonts/PostGrotesk-MediumItalic.eot.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 body {
   background: #ffffff;
@@ -348,8 +348,7 @@ body {
             padding: 15px;
             border-left: 1px solid #e0e0e0;
             border-right: 1px solid #e0e0e0;
-            border-bottom: 1px solid #e0e0e0;
-            height: 20px; }
+            border-bottom: 1px solid #e0e0e0; }
             .main-container .main-content-holder .main-right-container .confirmation-panel .sending-amount .sending-amount-label {
               float: left;
               width: 28%; }

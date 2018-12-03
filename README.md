@@ -10,4 +10,6 @@ ps aux | egrep '(PID|nginx)' kill -HUP 9831
 
 /etc/init.d/nginx start
 
-############## PM2 IGNORE WATCH on dev env pm2 start server.js --watch --ignore-watch "public/css"
+############## PM2 IGNORE WATCH on dev env pm2 start server.js --watch --ignore-watch
+
+Using ejs as a template renderer

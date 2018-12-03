@@ -23,10 +23,10 @@ $(document).ready(function() {
             error: function( jqXhr, textStatus, errorThrown ){
                 console.log( errorThrown );
             },
-            .fail(function(jqxhr, textStatus, errorThrown)
+            failfunction(jqxhr, textStatus, errorThrown)
             {
-                alert(textStatus, errorThrown)
-            })
+                alert(textStatus, errorThrown);
+            }
         });
       })
     
