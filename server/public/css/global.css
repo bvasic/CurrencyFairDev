@@ -98,6 +98,8 @@ body {
       display: table;
       height: 100%;
       padding-top: 75px; }
+      .main-container .main-content-holder .pointer {
+        cursor: pointer; }
       .main-container .main-content-holder .main-left-container {
         display: table-cell;
         width: 60%;
@@ -190,12 +192,11 @@ body {
           /*DROPDOWN COUNTRIES INPUT*/ }
           .main-container .main-content-holder .main-left-container .trans-form .trans-send-container {
             background: #fafdfe;
-            padding: 0;
+            padding: 25px;
             border: 2px solid #6ec0e6;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
-            box-shadow: none;
-            height: 120px; }
+            box-shadow: none; }
             .main-container .main-content-holder .main-left-container .trans-form .trans-send-container .send-left {
               width: 60%;
               float: left;
@@ -304,7 +305,8 @@ body {
             -moz-box-shadow: inset 0 0 5px #5cb4dd;
             -webkit-box-shadow: inset 0 0 5px #5cb4dd;
             box-shadow: inset 0 0 5px #5cb4dd;
-            transition: 0.3s ease; }
+            transition: 0.3s ease;
+            /*float:right;*/ }
           .main-container .main-content-holder .main-left-container .trans-submit button:hover {
             background: #399cca; }
         .main-container .main-content-holder .main-left-container .cf-footer {
@@ -891,6 +893,24 @@ body {
         height: 100px; }
         .main-container .main-content-holder .main-right-container .confirmation-panel {
           padding: 20px; } }
+.trans-submit {
+  margin-top: 40px; }
+  .trans-submit button {
+    background: #6ec0e6;
+    border: 1px solid #6fa0b7;
+    border-radius: 4px;
+    padding: 15px 20px;
+    color: #ffffff;
+    font-family: 'PostGrotesk-Medium';
+    font-size: 16px;
+    cursor: pointer;
+    -moz-box-shadow: inset 0 0 5px #5cb4dd;
+    -webkit-box-shadow: inset 0 0 5px #5cb4dd;
+    box-shadow: inset 0 0 5px #5cb4dd;
+    transition: 0.3s ease; }
+  .trans-submit button:hover {
+    background: #399cca; }
+
 /* MODAL */
 /* Outer */
 .popup {
@@ -951,5 +971,22 @@ body {
   .popup .popup-footer .verify-button:hover {
     background: #b3d5e6;
     border: 1px solid #cee3eb; }
+
+.customField {
+  display: block;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
 
 /*# sourceMappingURL=global.css.map */

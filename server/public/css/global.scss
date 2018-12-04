@@ -48,6 +48,9 @@ body{
 		}
 		/* MAIN CONTENT */
 		.main-content-holder{
+			.pointer{
+				cursor: pointer;
+			}
 			width: 1024px;
 			margin-left: auto;
 			margin-right: auto;
@@ -159,12 +162,11 @@ body{
 					/*DROPDOWN COUNTRIES INPUT*/
 					.trans-send-container{
 						background: #fafdfe;
-						padding:0;
+						padding:25px;
 						border:2px solid $darkBlue;
 						border-top-left-radius: 5px;
 						border-top-right-radius: 5px;
 						box-shadow: none;
-						height:120px;
 						.send-left{
 							width: 60%;
 							float: left;
@@ -299,6 +301,7 @@ body{
 						-webkit-box-shadow: inset 0 0 5px #5cb4dd;
 						box-shadow:         inset 0 0 5px #5cb4dd;
 						transition: 0.3s ease;
+						/*float:right;*/
 					}
 					button:hover{
 						background: $darkerBlue;
@@ -1023,6 +1026,27 @@ body{
 	}
 }
 
+.trans-submit {
+	margin-top: 40px;
+	button{
+		background: $darkBlue;
+		border: 1px solid #6fa0b7;
+		border-radius: 4px;
+		padding: 15px 20px;
+		color: #ffffff;
+		font-family: 'PostGrotesk-Medium'; 
+		font-size:16px;
+		cursor: pointer;
+		-moz-box-shadow:    inset 0 0 5px #5cb4dd;
+		-webkit-box-shadow: inset 0 0 5px #5cb4dd;
+		box-shadow:         inset 0 0 5px #5cb4dd;
+		transition: 0.3s ease;
+	}
+	button:hover{
+		background: #399cca;
+	}
+}
+
 
 
 /* MODAL */
@@ -1094,4 +1118,22 @@ body{
 			border: 1px solid #cee3eb;
 		}
 	}
+}
+
+.customField{
+	display: block;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }

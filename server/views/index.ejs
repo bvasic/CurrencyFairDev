@@ -43,29 +43,72 @@
             </div>
             <!--NAVIGATION MENU END-->
             <div class="trans-title">
-              <p>Complete our form:</p>
-              <p>THIS IS test EJS FILE</p>
+              <p>Please complete the following form: (Read comments in code)</p>
             </div>
             <!--FORM COLLECTION-->
             <div class="trans-form">
               <div class="trans-send-container">
               <!--SENDING DATA VIA POST REQUEST-->
                 <form action="/addperson" method="POST">
-                  <input type="text" placeholder="firstname" name="firstname">
-                  <input type="text" placeholder="lastname" name="lastname">
-                  <button type="submit">Submit</button>
+                  <div class="form-group">
+                    <!--HERE IN REAL SCENARIO ID WOULD BE RENDERED BASED ON AUTHENTICATED USER-->
+                    <label for="userId" class="col-lg-6">User ID:</label>
+                    <input type="text" placeholder="userId" name="userId" class="input-group customField" value="<%= Math.floor(Math.random() * Math.floor(1000)); %>">
+                  </div>
+                  <div class="form-group">
+                    <label for="currencyFrom" class="col-lg-6">Currency from:</label>
+                    <select class="form-control pointer" value="EUR" name="currencyFrom">
+                        <option value="EUR">EUR</option>
+                        <option value="USD">USD</option>
+                        <option value="CAD">CAD</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="currencyTo" class="col-lg-6">Currency to:</label>
+                    <select class="form-control pointer" value="EUR" name="currencyTo">
+                        <option value="EUR">EUR</option>
+                        <option value="USD">USD</option>
+                        <option value="CAD">CAD</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="amountSell" class="col-lg-6">Amount to sell:</label>
+                    <input type="text" placeholder="" name="amountSell" class="input-group customField">
+                  </div>
+                  <div class="form-group">
+                    <label for="amountBuy" class="col-lg-6">Amount to buy:</label>
+                    <input type="text" placeholder="" name="amountBuy" class="input-group customField">
+                  </div>
+                  <div class="form-group">
+                    <label for="rate" class="col-lg-6" class="col-lg-6">Rate:</label>
+                    <!-- RATE IS FIXED HARDCODED -->
+                    <input type="text" placeholder="5" value="5" name="rate" class="input-group customField">
+                  </div>
+                  <div class="form-group">
+                    <label for="timePlaced" class="col-lg-6">Time:</label>
+                    <input type="text" placeholder="timePlaced" name="timePlaced" value="<%= new Date().getHours()%>:<%=new Date().getMinutes() %>" class="input-group customField">
+                  </div>
+                  <div class="form-group">
+                    <label for="originatingCountry" class="col-lg-6">Country of origin:</label>
+                    <select class="form-control pointer" value="Ireland" name="currencyTo">
+                        <option value="Ireland">Ireland</option>
+                        <option value="England">England</option>
+                        <option value="France">France</option>
+                        <option value="Usa">Usa</option>
+                    </select>
+                  </div>
+                  <div class="form-group trans-submit">
+                    <button type="Submit">Submit</button>
+                  </div>
                 </form>
               </div>
             </div>
             <!--TRANSACTION CONVERSION FORM END-->
-            <div class="trans-submit">
-              <button data-popup-open="popup-confirmation">Submit</button>
-            </div>
             <div class="cf-footer">
-              <span>© 2016 CurrencyFair</span>
+              <span>© 2018 CurrencyFair</span>
               <div class="cf-footer-links">
                 <a href="#">Help & Support</a>
-                <a href="#">Legal Stuff</a>
+                <a href="#">T&C</a>
               </div>
             </div>
           </div>
@@ -82,14 +125,26 @@
                 <ul>
                   <% for(var i=0; i<persons.length; i++) {%>
                   <li class="quote">
-                    <span><%= persons[i].firstname %></span>
-                    <span><%= persons[i].lastname %></span>
+                    <div><b>USER ID:</b> <%= persons[i].userId %></div>
+                    <div><b>CURRENCY FROM:</b> <%= persons[i].currencyFrom %></div>
+                    <div><b>CURRENCY TO:</b> <%= persons[i].currencyTo %></div>
+                    <div><b>SELLING AMOUNT:</b> <%= persons[i].amountSell %></div>
+                    <div><b>BUYING AMOUNT:</b> <%= persons[i].amountBuy %></div>
+                    <div><b>RATE:</b> <%= persons[i].rate %></div>
+                    <div><b>TIME PLACED:</b> <%= persons[i].timePlaced %></div>
+                    <div><b>COUNTRY OF ORIGIN:</b> <%= persons[i].originatingCountry %></div>
                   </li>
+                  <hr>
                 <% } %>
                 </ul>
               </div>
+            </div><form action="/erase" method="GET">
+            <div class="trans-submit">
+              <button type="Submit">Erase all records</button>
             </div>
+          </form>
           </div>
+
         </div>
       </div>
     </div>

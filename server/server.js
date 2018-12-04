@@ -32,20 +32,24 @@ server.get('/', (req, res) => {
   // render EJS template populated with data from MongoDB
 })
 })
+
 server.get('/list', (req, res) => {
   db.collection('persons').find().toArray(function(err, results) {
   console.log(results);
   // render EJS template populated with data from MongoDB
 })
 })
+
 server.get('/erase', (req,res) => {
     db.collection('persons').remove( { } )
+    res.redirect('/')
 });
 
 // RECORD NEW DATA TO MongoDB
 server.post('/addperson', function(req,res){
   db.collection('persons').save(req.body, (err, result) => {
     if (err) return console.log(err)
+      
     console.log('saved to database')
     res.redirect('/')
   })
