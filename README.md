@@ -4,10 +4,9 @@ INSTRUCTIONS FOR RUNNING APP ON LOCAL DEVICE: (app also available on http://vps6
 3. node server.js
 4. In browser, open localhost:5555
 
-
+Validation not in place on frontend.
 
 #################################################
-
 
 Reminders for configuring nginx:
 
@@ -40,8 +39,6 @@ Koala used as sass processor.
 I made userId as a random integer, because I assume that we would have unique ID-s for specific user after it passes authentication if user is registered.
 
 Rate is also hardcoded since I dont have any API to use for currency exchange rates provided, so there is no calculations.
-
-
 
 NODE JS NOTES:
 find process: ps aux | grep node
