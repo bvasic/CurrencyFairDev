@@ -2,7 +2,7 @@ var bodyParser = require('body-parser');
 var express = require('express');
 var server = express();
 var form = require('express-form');
-var port = process.env.PORT || 1000;
+var port = process.env.PORT || 5555;
 var jsonfile = require('jsonfile');
 var filesave = require('fs');
 var file = './data/data.json';
@@ -25,7 +25,7 @@ MongoClient.connect('mongodb://admin:LifePlanDb55@cluster0-shard-00-00-b0lmw.mon
 server.use(bodyParser.urlencoded({extended: true}))
 
 server.use(express.static(path.join(__dirname, 'public')));
-
+server.use(express.static('public'));
 //REQUESTS
 server.get('/', (req, res) => {
   db.collection('persons').find().toArray(function(err, results) {

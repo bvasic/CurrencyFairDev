@@ -1,6 +1,7 @@
 
 
-Site running on vps ubuntu trough nginx reverse proxy on http://vps621397.ovh.net/
+Site running on vps ubuntu trough nginx reverse proxy on http://vps621397.ovh.net/ .
+Database is running on 
 
 It can be also run locally by downloading the code from github and entering folder /server/ and running node server.js, or with some process manager like pm2
 
@@ -28,3 +29,9 @@ Koala used as sass processor.
 I made userId as a random integer, because I assume that we would have unique ID-s for specific user after it passes authentication if user is registered.
 
 Rate is also hardcoded since I dont have any API to use for currency exchange rates provided, so there is no calculations.
+
+
+
+NODE JS NOTES:
+find process: ps aux | grep node
+kill PID: kill -9 PID
