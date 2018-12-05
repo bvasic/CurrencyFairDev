@@ -4,6 +4,9 @@ var server = express();
 var form = require('express-form');
 var port = process.env.PORT || 5555;
 var jsonfile = require('jsonfile');
+var filesave = require('fs');
+var file = './data/data.json';
+var path = require('path');
 
 const MongoClient = require('mongodb').MongoClient;
 
@@ -42,7 +45,7 @@ server.get('/erase', (req,res) => {
 server.post('/addperson', function(req,res){
   db.collection('persons').save(req.body, (err, result) => {
     if (err) return console.log(err)
-
+      
     console.log('saved to database')
     res.redirect('/')
   })
