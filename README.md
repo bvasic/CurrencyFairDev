@@ -6,6 +6,11 @@ INSTRUCTIONS FOR RUNNING APP ON LOCAL DEVICE: (app also available on http://vps6
 
 Validation not in place on frontend.
 
+TECHNOLOGIES USED:
+Backend:NodeJs + MongoDB
+FrontEnd: HTML + SASS (CSS + BOOTSTRAP 3)
+Hosting: VPS on Debian Server with http and ssh open
+
 #################################################
 
 Reminders for configuring nginx:
