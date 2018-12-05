@@ -10,7 +10,7 @@ var path = require('path');
 
 const MongoClient = require('mongodb').MongoClient;
 
-app.use(express.static(path.resolve('./public')));
+server.use(express.static(path.resolve('./public')));
 server.set('view engine', 'ejs');
 server.set('views', path.join(__dirname, 'views'));
 
