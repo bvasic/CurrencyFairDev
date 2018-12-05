@@ -24,7 +24,7 @@ MongoClient.connect('mongodb://admin:LifePlanDb55@cluster0-shard-00-00-b0lmw.mon
 
 server.use(bodyParser.urlencoded({extended: true}))
 
-server.use(express.static(path.join(__dirname, 'public')));
+//server.use(express.static(path.join(__dirname, 'public')));
 server.use(express.static('public'));
 //REQUESTS
 server.get('/', (req, res) => {
