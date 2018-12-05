@@ -1,7 +1,8 @@
 INSTRUCTIONS FOR RUNNING APP ON LOCAL DEVICE:
-1. Enter folder /server/
-2. node server.js
-3. In browser, open localhost:5555
+1. Install nodejs framework from https://nodejs.org/en/
+2. Enter folder /server/
+3. node server.js
+4. In browser, open localhost:5555
 
 
 
@@ -9,7 +10,7 @@ INSTRUCTIONS FOR RUNNING APP ON LOCAL DEVICE:
 
 
 Site running on vps ubuntu trough nginx reverse proxy on http://vps621397.ovh.net/ .
-Database is running on 
+Database is running on https://cloud.mongodb.com - credentials in the email
 
 It can be also run locally by downloading the code from github and entering folder /server/ and running node server.js, or with some process manager like pm2
 
