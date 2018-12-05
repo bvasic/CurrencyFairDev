@@ -1,4 +1,4 @@
-INSTRUCTIONS FOR RUNNING APP ON LOCAL DEVICE:
+INSTRUCTIONS FOR RUNNING APP ON LOCAL DEVICE: (app also available on http://vps621397.ovh.net/)
 1. Install nodejs framework from https://nodejs.org/en/
 2. Enter folder /server/
 3. node server.js
@@ -8,6 +8,8 @@ INSTRUCTIONS FOR RUNNING APP ON LOCAL DEVICE:
 
 #################################################
 
+
+Reminders for configuring nginx:
 
 Site running on vps ubuntu trough nginx reverse proxy on http://vps621397.ovh.net/ .
 Database is running on https://cloud.mongodb.com - credentials in the email
