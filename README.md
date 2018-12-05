@@ -1,3 +1,11 @@
+INSTRUCTIONS FOR RUNNING APP ON LOCAL DEVICE:
+1. Enter folder /server/
+2. node server.js
+3. In browser, open localhost:5555
+
+
+
+#################################################
 
 
 Site running on vps ubuntu trough nginx reverse proxy on http://vps621397.ovh.net/ .
