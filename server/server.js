@@ -7,9 +7,10 @@ var jsonfile = require('jsonfile');
 var filesave = require('fs');
 var file = './data/data.json';
 var path = require('path');
+
 const MongoClient = require('mongodb').MongoClient;
 
-server.use(express.static('public'));
+app.use(express.static(path.resolve('./public')));
 server.set('view engine', 'ejs');
 server.set('views', path.join(__dirname, 'views'));
 
