@@ -9,7 +9,7 @@ Validation not in place on frontend.
 TECHNOLOGIES USED:
 Backend:NodeJs + MongoDB
 FrontEnd: HTML + SASS (CSS + BOOTSTRAP 3) + jQuery
-Hosting: VPS on Debian Server with http and ssh open (hosted on OVH)
+Hosting: VPS on Ubuntu Server with http and ssh open (hosted on OVH)
 
 #################################################
 
