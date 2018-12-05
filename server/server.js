@@ -9,9 +9,10 @@ var file = './data/data.json';
 var path = require('path');
 const MongoClient = require('mongodb').MongoClient
 
-server.set('view engine', 'ejs')
+server.set('view engine', 'ejs');
+server.set('views', path.join(__dirname, 'views'));
 
-var db
+var db;
 
 MongoClient.connect('mongodb://admin:LifePlanDb55@cluster0-shard-00-00-b0lmw.mongodb.net:27017,cluster0-shard-00-01-b0lmw.mongodb.net:27017,cluster0-shard-00-02-b0lmw.mongodb.net:27017/lifeplanner?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin', (err, database) => {
   if (err) return console.log(err)
